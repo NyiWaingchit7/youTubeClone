@@ -17,9 +17,9 @@ const Feed = () => {
     <Stack sx={{ display: "flex", flexDirection: { xs: "column", md: "row" } }}>
       <Box
         sx={{
-          height: { sx: "auto", md: "92vh" },
+          height: { xs: "auto", md: "92vh" },
           borderRight: "1px solid #3d3d3d",
-          px: { sx: 0, md: 2 },
+          px: { xs: 0, md: 2 },
         }}
       >
         <SideBar selected={selected} setSelected={setSelected} />

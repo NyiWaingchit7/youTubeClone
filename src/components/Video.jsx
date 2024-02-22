@@ -10,7 +10,6 @@ const Video = ({ videos }) => {
       flexWrap="wrap"
       justifyContent="start"
       alignItems="start"
-      gap={2}
     >
       {videos?.map((d, index) => (
         <Box key={index}>
