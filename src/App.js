@@ -5,6 +5,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Feed from "./components/Feed";
 import NavBar from "./components/NavBar";
 import ChannelDetail from "./components/ChannelDetail";
+import SearchFeed from "./components/SearchFeed";
+import VideoDetail from "./components/VideoDetail";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Feed />} />
           <Route path="/channel/:id" element={<ChannelDetail />} />
+          <Route path="/video/:id" element={<VideoDetail />} />
+          <Route path="/search/:searchText" element={<SearchFeed />} />
         </Routes>
       </Box>
     </BrowserRouter>
